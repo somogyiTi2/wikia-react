@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled componts</title>
+</head>
+<body>
+    <h1>Install</h1>
+    <p>
+      # with npm
+      npm install --save styled-components
+
+    </p><p>
+    # with yarn
+    yarn add styled-components
+
+    </p>
+    <a href="https://styled-components.com/docs/basics">Web</a>
+    <div>
+        const Button = styled.button`
+  /* Adapt the colors based on primary prop */
+  background: ${props => props ? "palevioletred" : "white"};
+  color: ${props => props.hello ? "yellow" : "green"};
+  color: ${props => props.hello ? "yellow" : "green"};
+  color: ${props => props.OsztályNeve ? "Jelenlegi szín felülírása" : "Elöző színe felülírása"};
+  MIT AKAROK MEGVÁLTOZTATNI?: ${props => props.OsztályNeve ? "Jelenlegi szín felülírása" : "Amennyiben üres az elözők nem változnak"};
+
+  /*mindig ezt veszi alapnak és elötte tudom a változtatásokat leírni:
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid palevioletred;/*itt határozom meg milyen színü a külseje*/
+  border-radius: 3px;
+`;
+
+render(
+  <div>
+    <Button>Normal</Button>
+    <Button primary>Primary</Button>
+    <Button hello> hello </Button>
+  </div>
+);
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+serve -s build -p 8000
+
+másik:
+npm start
+
+http://localhost:8000/tasks

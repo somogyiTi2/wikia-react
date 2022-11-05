@@ -1,0 +1,8 @@
+npm run build
+npm i -g serve
+serve -s build -p 8000
+//nem megy mert le van tiltva:
+
+https://learn.microsoft.com/hu-hu/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.2#restricted
+
+https://youtu.be/w7ejDZ8SWv8?t=4911

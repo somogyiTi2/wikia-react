@@ -1,0 +1,39 @@
+.Component{
+    background-color: rgba(128, 0, 248, 0.822);
+    margin-top: 3%;
+    margin-left: 20%;
+    margin-right:20%;
+    border-radius: 40px; 
+    color:wheat;
+    box-shadow: 10px 10px rgb(39, 39, 39);
+    padding-bottom:1%;
+    padding-top:0.5%;
+  }
+/*így tudok gyerek osztályt létrehozni css-ben*/
+  .Component > h2{
+    margin-left: 40% ;
+    padding-bottom: 1%;
+    
+  }
+  .Component > input{
+    margin-left: 40% ;
+  }
+  .Component > button{
+    margin-left: 40% ;
+    padding: 0% 6%;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    
+  }
+  .Component > button:hover{
+    background-color: white;
+    color:black;
+  }
+
+  .Data{
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 40px;
+    margin:2%;
+    padding:0% 2%;
+  }
