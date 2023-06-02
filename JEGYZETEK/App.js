@@ -118,6 +118,7 @@ const App = () => {
         <input ref={taskInputRef} placeholder='refbemuto' />
         {/* nincs felesleges div */}
         <Suspense fallback={<p style={{ textAlign: 'center' }}>Loading...</p>}>
+        {/* https://translate.google.com/?sl=auto&tl=hu&text=Suspense%20React%20Suspense%20is%20a%20feature%20in%20React%20that%20allows%20components%20to%20%E2%80%9Csuspend%E2%80%9D%20rendering%20while%20they%20are%20waiting%20for%20something%20to%20happen%2C%20such%20as%20data%20to%20be%20fetched%20from%20an%20API%20or%20an%20image%20to%20be%20loaded.%20Suspense%20allows%20developers%20to%20create%20a%20more%20seamless%20user%20experience%20by%20rendering%20a%20placeholder%20or%20fallback%20component%20while%20the%20component%20is%20waiting%20for%20the%20required%20data%20to%20be%20available.%20%20Here%20is%20a%20general%20overview%20of%20how%20React%20Suspense%20works%3A%20%20A%20component%20that%20uses%20Suspense%20wraps%20a%20component%20that%20may%20need%20to%20%E2%80%9Csuspend%E2%80%9D%20rendering%20in%20a%20Suspense%20component.%20The%20wrapped%20component%20throws%20a%20promise%20when%20it%20needs%20to%20suspend%20rendering.%20The%20Suspense%20component%20catches%20the%20promise%20and%20renders%20a%20fallback%20component%20while%20the%20promise%20is%20pending.%20When%20the%20promise%20resolves%2C%20the%20wrapped%20component%20is%20rendered%20with%20the%20required%20data.%20Visit%20the%20following%20resources%20to%20learn%20more%3A&op=translate */}
           {/*
          19_20 
         lehetővé teszi a tartalék megjelenítését, amíg a gyermekei be nem fejezik a betöltést.
@@ -128,6 +129,7 @@ const App = () => {
         </Suspense>
         <RouterProvider router={router} />
       </form>
+      {ReactDOM.createPortal(<Backdrop/>, portalElement)/*Gyereknek találkozó pont a szülő ponton kívüli csomaghoz. 6_11 */}
       <div>
         rafce
         <hr />
